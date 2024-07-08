@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Object detection using TensorFlow JS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center><h1>Object detection using TensorFlow JS</h1></center>
+
+    <!-- Place this tag where you want the button to render. -->
+    <a class="github-button" href="https://github.com/zadecoku">Follow @Zade_Coku</a>
+
+    <!-- Place this tag where you want the button to render. -->
+    <a class="github-button" href="https://github.com/zadecoku">Follow @Era_Dervishi</a>
+
+    <p>Wait for the model to load before clicking the button to enable the webcam.</p>
+
+    <section id="demos" class="invisible">
+
+        <p>Head towards the camera to analyze! When ready click "enable webcam"
+            below and accept access to the Webcam.</p>
+
+        <div id="liveView" class="camView">
+            <button id="webcamButton">Enable Webcam</button>
+            <video id="webcam" autoplay width="700" height="500"></video>
+        </div>
+    </section>
+
+    <!-- Import TensorFlow.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+    <!-- Loading the coco-ssd model to use to recognize things in images -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+
+    <!-- Import the page's JavaScript to do some stuff -->
+    <script src="script.js" defer></script>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>
